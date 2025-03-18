@@ -7,70 +7,86 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <table width="100%" cellpadding="10">
-    <tr>
-      <!-- Sidebar -->
-      <td width="20%" valign="top" style="background-color: #f9f9f9; border-right: 1px solid #ccc;">
-        <h2 style="color: #003366;">Frankie Noguera</h2>
-        <p><strong>Aspiring Data Scientist</strong></p>
-        <p>
-          Senior at Gordon College<br>
-          Phone Number: +1(475)299-4890<br>
-          Email: <a href="mailto:frankienoguera@outlook.com">frankienoguera@outlook.com</a>
-        </p>
-        <hr>
-        <ul style="list-style: none; padding: 0;">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html"style="color: red;">Projects</a></li>
-          <li><a href="courses.html">Courses Taken</a></li>
-          <li><a href="other.html">Other</a></li>
-        </ul>
-      </td>
+  <!-- Left Sidebar -->
+  <div class="grid-container">
+    <div class="menu">
+      <h2 style="color: #003366;">Frankie Noguera</h2>
+      <p><strong>Aspiring Data Scientist</strong></p>
+      <p>
+        Senior at Gordon College<br>
+        <b>Email:</b> <a href="mailto:frankienoguera@outlook.com">frankienoguera@outlook.com</a><br>
+        <b>GitHub:</b> <a href="https://github.com/frankienoguera"><br> github.com/frankienoguera</a>
+      </p>
+      <hr>
+      <div class="menu-container">
+        <div class="menu-item"><a href="index.html">Home</a></div>
+        <div class="menu-item"><a href="projects.html" style="color: red;">Projects</a></div>
+        <div class="menu-item"><a href="courses.html">Courses Taken</a></div>
+        <div class="menu-item"><a href="other.html">Other</a></div>
+      </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="content">
+      <p><a href="index.html" style="color: #003366;">Home &gt; Projects</a></p>
+      <h2>Projects</h2>
+      <p>Here are some of the projects I have worked on using SQL, Python, and R programming</p>
       
-      <!-- Main Content -->
-      <td valign="top">
-        <p><a href="index.html" style="color: #003366;">Home > Projects</a></p>
-        <h2>Projects</h2>
-        <p>Here are some of the projects I have worked on using SQL, Python, and R programming</p>
-        <ul style="list-style: none">
-          <li><h3><strong>Project 1: UFC Relational Database</strong></h3>
-            <a href = "https://www.kaggle.com/datasets/frankienoguera/2024-25-ufc-relational-database">Built a relational database on fighter stats, country of origin stats, and UFC events stats</a><br>
-          </li>
-          <li><h3><strong>Project 2: Natural Language Processing on Presidential Inauguration Speech</strong></h3>
-            <p>My project applied NLP to analyze President Trump's inaugural speech (2025), focusing on sentiment analysis, word frequency, and thematic trends. 
-              Using techniques like tokenization, lemmatization, and lexicon-based sentiment scoring, I quantified the speech’s emotional tone and key themes. 
-              Additionally, I examined the most frequently used words and patterns to uncover the speech’s underlying message and rhetoric. 
-              This project demonstrates how NLP can provide data-driven insights into political communication.</p>
-              <div style="display: grid; place-items: center;">
-                <img src = "/images/trump_wordcloud.png" width = 300>
-              </div>
-              <div style="display: grid; place-items: center;">
-                <img src = "/images/trump_most_freq.png"width = 400>
-              </div>
-              <div style="display: grid; place-items: center;"> 
-                <img src = "/images/trump_sent.png" width = 600>
-              </div>
-          </li>
-          <li><strong>Project 3: Uncovering Anomalies in Network Traffic with Machine Learning</strong><br>
-            <p>In this project, I applied unsupervised machine learning to detect anomalies in network traffic data. 
-              Using K-Means clustering and PCA, I aimed to identify suspicious activity without relying on labeled data, a crucial approach for real-world cybersecurity challenges.
-            </p>
-            <p><u>What I did:</u></p>
-            <p><b>Explored the Data:</b> Analyzed a dataset containing 155 features, identifying a label column for evaluation (but not for training).<br>
-              <b>Dimensionality Reduction with PCA:</b> Reduced 155 features to 5 key components while preserving 91% of the original information.<br>
-              <b>Clustering with K-Means:</b> Determined 4 clusters using the elbow method and validated them with a silhouette score of 0.8 (indicating strong cluster formation).<br>
-              <b>Anomaly Detection:</b> Flagged data points far from cluster centers as anomalies, setting a threshold at the 95th percentile.<br>
-              <b>Model Evaluation:</b> Compared detected anomalies with actual labels using a confusion matrix, precision, recall, and F1-score</p>
-            <div style="display: grid; place-items: center;">
-              <img src = "images/variance_pca.png" height= 300>
-              <img src = "images/optimal_k.png" height = 300>
-              <img src = "images/3d_anom.png" height = 500>
-              <img src = "images/final_scoring.png" height = 100>
-            </div>
-          </li>
-        </ul>
-      </td>
-    </tr>
-  </table>
+      <div class="projects">
+        <!-- Project 1 -->
+        <section>
+          <h3><strong>Project 1: UFC Relational Database</strong></h3>
+          <p>
+            <a href="https://www.kaggle.com/datasets/frankienoguera/2024-25-ufc-relational-database">
+              Built a relational database on fighter stats, country of origin stats, and UFC events stats
+            </a>
+          </p>
+        </section>
+        
+        <!-- Project 2 -->
+        <section>
+          <h3><strong>Project 2: Natural Language Processing on Presidential Inauguration Speech</strong></h3>
+          <p>
+            My project applied NLP to analyze President Trump's inaugural speech (2025), focusing on sentiment analysis, word frequency, and thematic trends. 
+            Using techniques like tokenization, lemmatization, and lexicon-based sentiment scoring, I quantified the speech’s emotional tone and key themes. 
+            Additionally, I examined the most frequently used words and patterns to uncover the speech’s underlying message and rhetoric. 
+            This project demonstrates how NLP can provide data-driven insights into political communication.
+          </p>
+          <div class="projects-item">
+            <img src="images/trump_wordcloud.png" width="300" alt="Wordcloud from Trump's inaugural speech analysis">
+          </div>
+          <div class="projects-item">
+            <img src="images/trump_most_freq.png" width="400" alt="Most frequent words in Trump's inaugural speech">
+          </div>
+          <div class="projects-item">
+            <img src="images/trump_sent.png" width="600" alt="Sentiment analysis chart of Trump's inaugural speech">
+          </div>
+        </section>
+        
+        <!-- Project 3 -->
+        <section>
+          <h3><strong>Project 3: Uncovering Anomalies in Network Traffic with Machine Learning</strong></h3>
+          <p>
+            In this project, I applied unsupervised machine learning to detect anomalies in network traffic data. 
+            Using K-Means clustering and PCA, I aimed to identify suspicious activity without relying on labeled data, a crucial approach for real-world cybersecurity challenges.
+          </p>
+          <p><u>What I did:</u></p>
+          <p>
+            <b>Explored the Data:</b> Analyzed a dataset containing 155 features, identifying a label column for evaluation (but not for training).<br>
+            <b>Dimensionality Reduction with PCA:</b> Reduced 155 features to 5 key components while preserving 91% of the original information.<br>
+            <b>Clustering with K-Means:</b> Determined 4 clusters using the elbow method and validated them with a silhouette score of 0.8 (indicating strong cluster formation).<br>
+            <b>Anomaly Detection:</b> Flagged data points far from cluster centers as anomalies, setting a threshold at the 95th percentile.<br>
+            <b>Model Evaluation:</b> Compared detected anomalies with actual labels using a confusion matrix, precision, recall, and F1-score.
+          </p>
+          <div class="project-images">
+            <img src="images/variance_pca.png" height="10" alt="Variance explained by PCA components">
+            <img src="images/optimal_k.png" height="100" alt="Optimal number of clusters determined by elbow method">
+            <img src="images/3d_anom.png" height="100" alt="3D visualization of anomalies">
+            <img src="images/final_scoring.png" height="100" alt="Final scoring metrics for anomaly detection">
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

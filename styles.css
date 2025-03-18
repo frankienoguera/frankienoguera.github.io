@@ -1,120 +1,87 @@
-/* Global styles for all pages */
+/* Global Styles */
 body {
-    font-family: "Arial", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #333333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+h2 {
+  color: #003366;
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #003366;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+/* Grid Container for Layout */
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 860px) {
+  .grid-container {
+    flex-direction: column;
   }
-  
-  h2 {
-    color: #003366;
-    margin-top: 0;
+}
+
+/* Sidebar Menu Container */
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 860px) {
+  .menu-container {
+    flex-direction: column;
   }
-  
-  p {
-    line-height: 1.6;
-    font-size: 1em;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #003366;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  ul {
-    padding: 0;
-    margin: 0;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
-  }
-  
-  hr {
-    border: 0;
-    border-top: 1px solid #ccc;
-  }
-  
-  /* Sidebar styling */
-  td[width="20%"] {
-    height: 100vh; /* Ensure sidebar spans full height */
-    background-color: #f9f9f9;
-    border-right: 1px solid #ccc;
-  }
-  
-  /* Styles specific to the 'Other' page */
-  body.other-page {
-    background-color: #EBE7E7;
-  }
-  
-  body.other-page .main-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  
-  body.other-page svg {
-    width: 256px;
-    height: 256px;
-  }
-  
-  body.other-page #smoke-1 {
-    stroke-dasharray: 0, 10;
-    animation: smoke 6s ease infinite;
-  }
-  
-  body.other-page #smoke-2 {
-    stroke-dasharray: 0, 10;
-    animation: smoke 6s 0.5s ease infinite;
-  }
-  
-  @keyframes smoke {
-    0% {
-      stroke-dasharray: 0, 10;
-    }
-    50% {
-      stroke-dasharray: 10, 0;
-    }
-    100% {
-      stroke-dasharray: 10, 0;
-      opacity: 0;
-    }
-  }
-  
-  body.other-page #line-1,
-  body.other-page #line-2,
-  body.other-page #line-3,
-  body.other-page #line-4 {
-    opacity: 0;
-    animation: writing 0.5s linear forwards;
-  }
-  
-  body.other-page #line-2 {
-    animation-delay: 1s;
-  }
-  
-  body.other-page #line-3 {
-    animation-delay: 1.5s;
-  }
-  
-  body.other-page #line-4 {
-    animation-delay: 2s;
-  }
-  
-  @keyframes writing {
-    0% {
-      width: 0px;
-      opacity: 1;
-    }
-    100% {
-      width: 14px;
-      opacity: 1;
-    }
-  }
-  
+}
+
+/* Projects Section */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Responsive Images: ensures images scale down on smaller screens */
+.projects img,
+.project-images img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Project Section Styling */
+.projects section {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Project Images Grid (moved from inline styling) */
+.project-images {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}

@@ -3,81 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
+  <title>Courses Taken</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <table width="100%" cellpadding="10">
-    <tr>
-      <!-- Sidebar -->
-      <td width="20%" valign="top" style="background-color: #f9f9f9; border-right: 1px solid #ccc;">
-        <h2 style="color: #003366;">Frankie Noguera</h2>
-        <p><strong>Aspiring Data Scientist</strong></p>
-        <p>
-          Senior at Gordon College<br>
-          Phone Number: +1(475)299-4890<br>
-          Email: <a href="mailto:frankienoguera@outlook.com">frankienoguera@outlook.com</a>
-        </p>
-        <hr>
-        <ul style="list-style: none; padding: 0;">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="courses.html"style="color: red;">Courses Taken</a></li>
-          <li><a href="other.html">Other</a></li>
-        </ul>
-      </td>
-      
-      <!-- Main Content -->
-      <td valign="top">
-        <p><a href="index.html" style="color: #003366;">Home > Courses Taken</a></p>
-        <h2>Courses Taken</h2>
-        <p>Here are some of the courses I have taken:</p>
-        <ul>
-          <li><strong>MATH 1200: Statistics I</strong><br>
-            Learned Statistics
-          </li>
-          <li><strong>MAT 232: Linear Algebra</strong><br>
-            Learned matrix methods; algebra of matrices, determinants, finding solutions of systems of linear equations and eigenvalue problems; 
-            vector spaces and linear transformations; classification of matrices
-          </li>
-          <li><strong>CPS 121: Intro to Programming</strong><br>
-            Learned Python, fundamental theories to computer proframming such as:
-            nature of algorithms, essential control structures and data representation.
-          </li>
-          <li><strong>DSC 210: Data Wrangling</strong><br>
-            Introduces concepts and techniques used to manipulate tabular and hierarchical data.<br> 
-            Explores methods in data acquisition (web scraping, data APIs, relational databases with SQL) and transformation with explicit consideration of diverse data types.<br> 
-            Best practices related to documentation and data provenance are emphasized.
-          </li>
-          <li><strong>DSC 211: Modeling and Visualization</strong><br>
-            Introduces fundamental concepts and techniques related to modeling and data visualization. 
-            Topics include linear and logistic regression modeling workflows, data visualization theory, and applied animation and interactivity. 
-          </li>
-          <li><strong>CPS 330: Machine Learning</strong><br>
-            In this class we covered topics such as:
-            Supervised learning, Unsupervised Learning, Reinforcement Learning, Deep Learning and Neural Networks. <br>
-            Additionally I also learned regression, classification, clustering, and ensemble methods. <br>
-            Along with learning how to use tools like Scikit-Learn, Jupyter Notebooks, Keras, TensorFLow, and Google Colab.
-          </li>
-          <li><strong>DSC 440: Data Science Project</strong><br>
-            Data management and manipulation using Python/R and tools for working with large data sets. 
-          </li>
-          <li><strong>COM 205: Communication Theory</strong><br>
-            Learned foundational concepts and methods for understanding and evaluating communication with a focus on theory relevant to visual storytelling.
-          </li>
-          <li><strong>COM 222: Journalsim</strong><br>
-            Studied all facets of reporting news. Gained experience in techniques of interviewing, information gathering and writing news stories for multimedia platforms. 
-          </li>
-          <li><strong>COM 322: Digital News Journalism</strong><br>
-            Did journalistic writing along with other aspects of writing for digital media, and management of news in a digital culture, to combine efforts in developing those student-directed skills.
-          </li>
-          <li><strong>COM 344: Influence and Persuasion</strong><br>
-            Examines elements, domains, implications and challenges of persuasion.<br> 
-            Engages variety of theories for understanding and evaluating persuasion, grappling with issues of effectiveness, ethics and eloquence in interplay of creativity and critique. 
-          </li>
-        </ul>
-      </td>
-    </tr>
-  </table>
+  <div class="grid-container">
+    <!-- Sidebar -->
+    <div class="menu">
+      <h2 style="color: #003366;">Frankie Noguera</h2>
+      <p><strong>Aspiring Data Scientist</strong></p>
+      <p>
+        Senior at Gordon College<br>
+        <b>Email:</b> <a href="mailto:frankienoguera@outlook.com">frankienoguera@outlook.com</a><br>
+        <b>GitHub:</b> <a href="https://github.com/frankienoguera"><br> github.com/frankienoguera</a>
+      </p>
+      <hr>
+      <div class="menu-container">
+        <div class="menu-item"><a href="index.html">Home</a></div>
+        <div class="menu-item"><a href="projects.html">Projects</a></div>
+        <div class="menu-item"><a href="courses.html" style="color: red;">Courses Taken</a></div>
+        <div class="menu-item"><a href="other.html">Other</a></div>
+      </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="content">
+      <p><a href="index.html" style="color: #003366;">Home &gt; Courses Taken</a></p>
+      <h2>Courses Taken</h2>
+      <p>Here are some of the courses I have taken:</p>
+      <ul>
+        <li><strong>MATH 1200: Statistics I</strong><br>
+          Developed a robust foundation in statistical methods and techniques, equipping me to analyze and interpret complex datasets.
+        </li>
+        <li><strong>MAT 232: Linear Algebra</strong><br>
+          Mastered advanced matrix methods, including matrix algebra, determinants, and techniques for solving systems of linear equations and eigenvalue problems. 
+          Explored vector spaces, linear transformations, and matrix classification to enhance analytical capabilities.
+        </li>
+        <li><strong>CPS 121: Intro to Programming</strong><br>
+          Gained proficiency in Python programming along with core concepts such as algorithm design, control structures, and effective data representation.
+        </li>
+        <li><strong>DSC 210: Data Wrangling</strong><br>
+          Specialized in advanced data manipulation and transformation techniques.
+          Learned to acquire data through web scraping, APIs, and SQL queries while emphasizing documentation and data provenance.
+        </li>
+        <li><strong>DSC 211: Modeling and Visualization</strong><br>
+          Developed practical expertise in data modeling and visualization. 
+          Covered workflows for linear and logistic regression, honed skills in visualization theory, and created interactive, animated data presentations.
+        </li>
+        <li><strong>CPS 330: Machine Learning</strong><br>
+          Explored a comprehensive suite of machine learning methodologies including supervised, unsupervised, reinforcement, and deep learning. 
+          Applied techniques such as regression, classification, clustering, and ensemble methods using industry-standard tools like Scikit-Learn, Jupyter Notebooks, Keras, TensorFlow, and Google Colab.
+        </li>
+        <li><strong>DSC 440: Data Science Project</strong><br>
+          Executed a data science project emphasizing data management and manipulation using Python and R. 
+          Employed tools for processing and analyzing large datasets to solve real-world problems.
+        </li>
+        <li><strong>COM 205: Communication Theory</strong><br>
+          Studied foundational communication principles with a focus on visual storytelling. 
+          Developed an understanding of how to craft messages that resonate with diverse audiences.
+        </li>
+        <li><strong>COM 222: Journalism</strong><br>
+          Acquired comprehensive reporting skills, including interviewing, information gathering, and multimedia storytelling. 
+          Gained hands-on experience in writing engaging news stories.
+        </li>
+        <li><strong>COM 322: Digital News Journalism</strong><br>
+          Advanced journalistic writing skills for digital platforms.
+          Managed news content in a digital environment, integrating modern storytelling techniques with rigorous journalistic standards.
+        </li>
+        <li><strong>COM 344: Influence and Persuasion</strong><br>
+          Examined the multifaceted elements of persuasive communication. 
+          Critically analyzed theories of influence while balancing effectiveness, ethics, and creativity in message delivery.
+        </li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
